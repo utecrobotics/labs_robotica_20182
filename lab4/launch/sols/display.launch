@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find lab4)/launch/apriltags.launch" />
+  <arg name="config_file" value="$(find lab4)/config/showcam.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" respawn="false" output="screen" args="-d $(arg config_file)"/>
+</launch>
+
