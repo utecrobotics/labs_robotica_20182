@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+  <!-- Nodo que convierte la profundidad en un escaneo laser -->
+  <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+    <!-- Remapear el topico a la profundidad registrada -->
+    <remap from="image" to="/camera/depth_registered/image_raw" />
+    <remap from="camera_info" to="/camera/depth_registered/camera_info" />
+  </node>
+
+  <!-- Nodo que se suscribe a scan y no hace nada -->
+  <node pkg="lab5" type="dummy_subscriber" name="dummy_subscriber" />
+  
+</launch>

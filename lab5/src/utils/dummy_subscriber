@@ -1,0 +1,29 @@
+#!/usr/bin/env python
+#
+# This is a subscriber to the /scan topic. It does not do anything else
+#
+
+import rospy
+import numpy as np
+
+from sensor_msgs.msg import LaserScan
+
+
+def callback(msg):
+    pass
+
+
+def main():
+    # Inicializar el nodo de ROS y asignarle un nombre
+    rospy.init_node('dummy_subscriber_scan')
+    # Suscriptor al topico de odometria
+    rospy.Subscriber('/scan', LaserScan, callback)
+    # Esperar sin hacer nada
+    rospy.spin()
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except rospy.ROSInterruptException:
+        pass
