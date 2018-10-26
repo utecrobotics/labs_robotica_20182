@@ -26,5 +26,9 @@
     <arg name="custom_param_file" value="$(arg custom_param_file)"/>
   </include>
 
+  <!-- Static Transformations -->
+  <include file="$(find lab5)/launch/include/publish_camera_pose.launch" />
+  <include file="$(find lab5)/launch/include/kobuki_model_bringup.launch" />
+  
 </launch>
 

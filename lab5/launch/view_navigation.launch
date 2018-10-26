@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<!-- Visualize the robot while building a map or navigating with the ros navistack. -->
+
+<launch>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab5)/config/navigation.rviz"/>
+</launch>
