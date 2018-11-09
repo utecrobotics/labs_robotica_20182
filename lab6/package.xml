@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lab6</name>
+  <version>0.0.0</version>
+  <description>The lab6 package</description>
+  <maintainer email="oramos@todo.todo">oramos</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
