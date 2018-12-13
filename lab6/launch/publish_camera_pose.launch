@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+<launch>
+
+  <node pkg="tf2_ros" type="static_transform_publisher" name="broadcaster2" args="0 0 0.16 0 0 0 1 base_link camera_link" />
+
+  <!-- Not needed when the robot urdf is shown  -->
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="broadcaster1" args="0 0 0.0102 0 0 0 1 base_footprint base_link" /> -->
+  
+</launch>

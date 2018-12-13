@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <include file="$(find kobuki_node)/launch/minimal.launch" />
+  <include file="$(find freenect_launch)/launch/examples/freenect-registered-xyzrgb.launch" />
+  <include file="$(find lab6)/launch/kobuki_model_bringup.launch" />
+
+</launch>
